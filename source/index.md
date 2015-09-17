@@ -2,9 +2,7 @@
 title: API Reference
 
 language_tabs:
-  - shell
-  - ruby
-  - python
+  - json
 
 toc_footers:
   - <a href='#'>Sign Up for a Developer Key</a>
@@ -16,7 +14,7 @@ includes:
 search: true
 ---
 
-# Introduction
+# Introductionsdfsd
 
 Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
 
@@ -28,22 +26,23 @@ This example API documentation page was created with [Slate](http://github.com/t
 
 > To authorize, use this code:
 
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-```
-
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-```
-
-```shell
-# With shell, you can just pass the correct header with each request
-curl "api_endpoint_here"
-  -H "Authorization: meowmeowmeow"
+```json
+[
+  {
+    "id": 1,
+    "name": "Fluffums",
+    "breed": "calico",
+    "fluffiness": 6,
+    "cuteness": 7
+  },
+  {
+    "id": 2,
+    "name": "Isis",
+    "breed": "unknown",
+    "fluffiness": 5,
+    "cuteness": 10
+  }
+]
 ```
 
 > Make sure to replace `meowmeowmeow` with your API key.
